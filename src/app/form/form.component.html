@@ -1,0 +1,13 @@
+<form>
+  <div>
+    <label for="inputValue">Input Value:</label>
+    <input
+      id="inputValue"
+      [(ngModel)]="fiel"
+      name="inputValue"
+      (ngModelChange)="modify($event)"
+      required
+    />
+  </div>
+  <p>Current Value: {{ fiel }}</p>
+</form>
